@@ -1,0 +1,61 @@
+.background {
+  background: linear-gradient(to bottom right, $palette100, $palette200);
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 85%;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 3rem);
+  @include md {
+    padding-top: 7rem;
+  }
+}
+
+main {
+  background: $palette300;
+  flex-grow: 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 3rem 4.5%;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+.title h1 {
+  margin-bottom: 3rem;
+  position: relative;
+  line-height: 1;
+  &::first-letter {
+    font-size: 4rem;
+    color: white;
+    color: $palette300;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      transparent 15%,
+      $palette350 15%,
+      $palette350 82%,
+      transparent 82%,
+      transparent 100%
+    );
+    // background-color: $palette350;
+    padding: 0 0.75rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    height: 0.1rem;
+    opacity: 0.1;
+    background-color: $palette390;
+  }
+}

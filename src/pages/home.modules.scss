@@ -1,0 +1,62 @@
+.homepage {
+  main {
+    padding: 0;
+    background: linear-gradient(
+      90deg,
+      $palette350 0%,
+      $palette350 25%,
+      $palette300 25%
+    );
+  }
+
+  main > section {
+    padding: 0 4.5%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .container,
+  article {
+    width: 50%;
+  }
+  h1 {
+    font-size: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: normal;
+      font-size: 2.6rem;
+      color: $palette550;
+    }
+  }
+
+  h2 {
+    font-weight: normal;
+    color: $palette390;
+    font-size: 2rem;
+    opacity: 0.7;
+    div {
+      display: inline-block;
+      &:not(:last-of-type) {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+  h1,
+  h1 span {
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .container {
+    align-self: flex-end;
+    justify-content: end;
+  }
+  .button-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

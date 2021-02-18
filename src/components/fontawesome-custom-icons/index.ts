@@ -1,0 +1,11 @@
+export { default as faAdobe } from "./icons/faAdobe";
+export { default as faAffinity } from "./icons/faAffinity";
+export { default as faExpress } from "./icons/faExpress";
+export { default as faGatsby } from "./icons/faGatsby";
+export { default as faGraphql } from "./icons/faGraphql";
+export { default as faJquery } from "./icons/faJquery";
+export { default as faMongoDb } from "./icons/faMongoDb";
+export { default as faPostman } from "./icons/faPostman";
+export { default as faPostgres } from "./icons/faPosgres";
+export { default as faTailwind } from "./icons/faTailwind";
+export { default as faTypescript } from "./icons/faTypescript";

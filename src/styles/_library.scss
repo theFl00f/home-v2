@@ -1,0 +1,33 @@
+$palette100: #7bdff2;
+$palette2000: #ddfffb;
+$palette200: #b2f7ef;
+$palette250: #7ef1e3;
+$palette300: #f3fffe;
+$palette350: #ffcc99;
+$palette360: #ffaa55;
+$palette390: #626566;
+$palette400: #ffdce7;
+$palette500: #ffbdde;
+$palette550: #eb7ab2;
+$palette600: #f55275;
+
+@mixin xs {
+  @media (max-width: 300px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: 940px) {
+    @content;
+  }
+}

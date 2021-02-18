@@ -1,0 +1,60 @@
+.skills {
+  main ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    padding: 1.25rem 0;
+
+    .container {
+      font-size: 4rem;
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      &:nth-of-type(7n + 0) .container {
+        background-color: #fef3da;
+        color: #f7c85b;
+      }
+
+      &:nth-of-type(7n + 1) .container {
+        background-color: #efd4ff;
+        color: #dc8afc;
+      }
+      &:nth-of-type(7n + 2) .container {
+        background-color: #e1f7fe;
+        color: #61cffd;
+      }
+      &:nth-of-type(7n + 3) .container {
+        background-color: #e7e2fe;
+        color: #a08afc;
+      }
+      &:nth-of-type(7n + 4) .container {
+        background-color: #fee8da;
+        color: #ff9d6f;
+      }
+      &:nth-of-type(7n + 5) .container {
+        background-color: #e4f9f4;
+        color: #6eddc3;
+      }
+      &:nth-of-type(7n + 6) .container {
+        background-color: #ffc7e9;
+        color: #fc8adf;
+      }
+    }
+
+    .skill-list-item {
+      font-family: "PT Sans", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+  }
+}

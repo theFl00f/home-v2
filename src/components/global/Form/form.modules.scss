@@ -1,0 +1,11 @@
+form {
+  input,
+  textarea {
+    background-color: rgba(132, 235, 255, 0.3);
+    border: 0.1rem solid rgba(98, 101, 102, 0.25);
+    border-radius: 0.5rem;
+  }
+  input {
+    padding: 1rem;
+  }
+}
