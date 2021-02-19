@@ -5,10 +5,11 @@ import "./contact.modules.scss";
 
 const Contact: FC = () => {
   const [isConfirmed, setIsConfirmed] = useState<boolean>(false);
+  const title = "Contact";
   return (
-    <Layout className="contact" title="Celeste Ellerby - Contact">
+    <Layout className="contact" title={`Celeste Ellerby - ${title}`}>
       <div className="title">
-        <h1>Contact</h1>
+        <h1>{title}</h1>
         <section className={isConfirmed ? "confirmed" : ""}>
           <article>
             <h2>I&apos;d love to hear from you!</h2>

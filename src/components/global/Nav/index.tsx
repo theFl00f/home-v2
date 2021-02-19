@@ -6,16 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Nav: FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const navClass = isOpen ? "open" : "";
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const navClass = isExpanded ? "open" : "";
 
   return (
     <header>
       <nav className={navClass}>
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button
+          aria-expanded={isExpanded}
+          aria-controls="menu"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          <span className="sr-only">Menu</span>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <ul>
+        <ul id="menu">
           {navLinks.map(({ to, icon, label }, index) => (
             <NavLink icon={icon} to={to} label={label} key={index} />
           ))}
