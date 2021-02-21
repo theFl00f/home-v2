@@ -8,7 +8,7 @@ const faGraphql: IconDefinition = {
   prefix: "fab",
   iconName: "graphql" as IconName,
   icon: [
-    64,
+    60,
     64,
     [],
     "f0007",

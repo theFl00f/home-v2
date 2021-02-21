@@ -5,6 +5,7 @@ import {
   faJsSquare,
   faNodeJs,
   faReact,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faExpress,
@@ -33,6 +34,10 @@ export const skills = [
   {
     icon: faTailwind,
     label: "Tailwind.css",
+  },
+  {
+    icon: faSass,
+    label: "Sass",
   },
   {
     icon: faJsSquare,

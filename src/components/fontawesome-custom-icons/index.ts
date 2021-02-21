@@ -9,3 +9,4 @@ export { default as faPostman } from "./icons/faPostman";
 export { default as faPostgres } from "./icons/faPosgres";
 export { default as faTailwind } from "./icons/faTailwind";
 export { default as faTypescript } from "./icons/faTypescript";
+export { default as faKnex } from "./icons/faKnex";

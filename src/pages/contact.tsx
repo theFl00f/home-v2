@@ -8,7 +8,7 @@ const Contact: FC = () => {
   const title = "Contact";
   return (
     <Layout className="contact" title={`Celeste Ellerby - ${title}`}>
-      <div className="title">
+      <div className={title}>
         <h1>{title}</h1>
         <section className={isConfirmed ? "confirmed" : ""}>
           <article>

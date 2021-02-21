@@ -1,0 +1,51 @@
+@mixin border-circle($color1, $color2) {
+  border: 0.25rem double $color1;
+  color: $color1;
+  background-color: $color2;
+  box-shadow: 0 0 0 0.4rem $color2;
+}
+
+.about .techstack {
+  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  row-gap: 1.5rem;
+  column-gap: 1rem;
+  li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      font-size: 4rem;
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.15rem;
+    }
+    &:nth-of-type(7n + 6) .circle {
+      @include border-circle(#fef3da, #f7c85b);
+    }
+    &:nth-of-type(7n + 1) .circle {
+      @include border-circle(#efd4ff, #dc8afc);
+    }
+    &:nth-of-type(7n + 2) .circle {
+      @include border-circle(#e1f7fe, #61cffd);
+    }
+    &:nth-of-type(7n + 3) .circle {
+      @include border-circle(#e7e2fe, #a08afc);
+    }
+    &:nth-of-type(7n + 4) .circle {
+      @include border-circle(#fee8da, #ff9d6f);
+    }
+    &:nth-of-type(7n + 5) .circle {
+      @include border-circle(#e4f9f4, #6eddc3);
+    }
+  }
+}
