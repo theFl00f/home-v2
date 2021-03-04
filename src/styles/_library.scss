@@ -32,3 +32,7 @@ $palette600: #f55275;
     @content;
   }
 }
+
+@mixin transition($property...) {
+  transition: $property 0.33s ease;
+}

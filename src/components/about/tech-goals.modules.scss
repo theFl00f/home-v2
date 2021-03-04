@@ -1,0 +1,42 @@
+@mixin dot-color($color1, $color2) {
+  background-color: $color2;
+  box-shadow: 1px 1px 2px $color1;
+}
+
+.tech-goals {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    list-style-type: disc;
+    padding: 2rem 0 4rem;
+  }
+}
+
+//slide
+
+.carousel {
+  .slide {
+    background-color: transparent;
+  }
+  .control-dots .dot {
+    &:nth-of-type(7n + 1) {
+      @include dot-color(#fef3da, #f7c85b);
+    }
+    &:nth-of-type(7n + 5) {
+      @include dot-color(#efd4ff, #dc8afc);
+    }
+    &:nth-of-type(7n + 4) {
+      @include dot-color(#e1f7fe, #61cffd);
+    }
+    &:nth-of-type(7n + 3) {
+      @include dot-color(#e7e2fe, #a08afc);
+    }
+    &:nth-of-type(7n + 2) {
+      @include dot-color(#fee8da, #ff9d6f);
+    }
+    &:nth-of-type(7n + 6) {
+      @include dot-color(#e4f9f4, #6eddc3);
+    }
+  }
+}

@@ -7,6 +7,7 @@ import Button from "../global/Button";
 import { Form, Input, Textarea } from "../global/Form";
 import CircleConfirm from "./CircleConfirm";
 import "./emailForm.modules.scss";
+import HPInput from "../global/Form/HPInput";
 
 interface FormData {
   asdfghjkname: string;
@@ -114,36 +115,10 @@ const EmailForm: FC<Props> = ({ setIsConfirmed }) => {
 
       {/* H O N E Y P O T */}
 
-      <label className="ohmyhoney" htmlFor="name"></label>
-      <input
-        ref={register}
-        className="ohmyhoney"
-        autoComplete="off"
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name here"
-      />
-      <label className="ohmyhoney" htmlFor="email"></label>
-      <input
-        ref={register}
-        className="ohmyhoney"
-        autoComplete="off"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your e-mail here"
-      />
-      <label className="ohmyhoney" htmlFor="message"></label>
-      <input
-        ref={register}
-        className="ohmyhoney"
-        autoComplete="off"
-        type="message"
-        id="message"
-        name="message"
-        placeholder="Your message here"
-      />
+      <HPInput name="name" ref={register} placeholder="Your name here" />
+      <HPInput name="email" ref={register} placeholder="Your e-mail here" />
+      <HPInput name="message" ref={register} placeholder="Your message here" />
+
       <Button type="submit" isRounded={false}>
         <FontAwesomeIcon icon={faLocationArrow} />
         Send Message

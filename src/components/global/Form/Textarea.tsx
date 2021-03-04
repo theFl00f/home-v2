@@ -1,21 +1,34 @@
-import React, { ClassAttributes, TextareaHTMLAttributes } from "react";
-import { FC } from "react";
+import React, {
+  DetailedHTMLProps,
+  forwardRef,
+  TextareaHTMLAttributes,
+} from "react";
 
-interface Props {
+interface Props
+  extends DetailedHTMLProps<
+    TextareaHTMLAttributes<HTMLTextAreaElement>,
+    HTMLTextAreaElement
+  > {
   label: string;
 }
 
-const Textarea: FC<
-  Props &
-    TextareaHTMLAttributes<HTMLTextAreaElement> &
-    ClassAttributes<HTMLTextAreaElement>
-> = ({ id, label, ...rest }) => {
+const Textarea = forwardRef<HTMLTextAreaElement, Props>(function Textarea(
+  { id, label, ...rest },
+  ref
+) {
   return (
     <div className="input-group">
       <label htmlFor={id}>{label}</label>
-      <textarea cols={20} rows={3} {...rest} id={id} name={id}></textarea>
+      <textarea
+        cols={20}
+        rows={3}
+        ref={ref}
+        {...rest}
+        id={id}
+        name={id}
+      ></textarea>
     </div>
   );
-};
+});
 
 export default Textarea;

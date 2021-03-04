@@ -7,10 +7,15 @@
   padding: 1rem 2rem;
   cursor: pointer;
   &.primary {
-    background-color: $palette360;
     color: white;
+    background-color: $palette360;
     border: 0.1rem solid $palette360;
     box-shadow: 0 0.4rem 0.75rem rgba(255, 177, 99, 0.5);
+    &:focus {
+      background-color: $palette350;
+      border-color: $palette350;
+      box-shadow: 0 0.4rem 0.75rem rgba(255, 204, 153, 0.5);
+    }
   }
   &.secondary {
     background-color: transparent;
